@@ -1,7 +1,6 @@
-import React,{useState,useEffect,useContext} from 'react';
+import React,{useEffect,useContext} from 'react';
 import Quotes from "./Components/Quotes";
 import {AppContext} from "./Context/AppContext";
-import {getQuotes} from "./api/api"; 
 import axios  from 'axios';
 
 
@@ -10,7 +9,7 @@ const URL = 'http://localhost:1337/api/quotes-collections';
 
 function App() {
   const appContext = useContext(AppContext);
-  const {quotes ,setQuotes}  = appContext;
+  const {setQuotes}  = appContext;
 
   useEffect(()=>{
     const fetchData = async()=>{
@@ -19,7 +18,7 @@ function App() {
       setQuotes(result.data.data);
     }
     fetchData();
-  },[])
+  })
 
   return (
     <div className="App ">
