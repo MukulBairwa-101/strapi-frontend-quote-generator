@@ -1,38 +1,73 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter&family=Lato&display=swap');
+/* global */
+*{
+  box-sizing: border-box;
+  padding:0;
+  margin:0;
+}
+.App{
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  /* height:100vh; */
+  flex-direction: column;
+  font-family:'Inter',sans-serif;
+}
+body{
+  background: linear-gradient(-90deg,#02203c,#001528);
+  color:#fff;
+}
+.flex{
+  display:flex;
+}
+.flex-col{
+  flex-direction: column;
+}
+.justify-content{
+  justify-content:center;
+
+}
+.align-items{
+  align-items:center;
+}
+
+.text-center{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.quote-container{ 
+  max-width: 900px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.quote-btn{
+  background-color: #02203c;
+  padding:15px 60px;
+  color:#fff;
+  font-size:16px;
+  border-radius: 10px;
+  border: none ;outline: none;
+  cursor: pointer;
+  margin: 50px auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.quote-holder{
+  padding:50px 70px;
+  background-color:#122536;
+  border-radius: 20px;
+  margin:50px auto;
 }
+.quote-text {
+  font-family:'Lato',sans-serif;
+  letter-spacing: 1px;
+  margin:20px 0;
 
-.App-link {
-  color: #61dafb;
+  
 }
+.quote-title {
+  font-size: 20px;
+  
+}
+.quote-author{
+  justify-content:flex-end;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
