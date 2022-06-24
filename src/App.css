@@ -5,69 +5,29 @@
   padding:0;
   margin:0;
 }
-.App{
-  display: flex;
-  justify-content:center;
-  align-items:center;
-  /* height:100vh; */
-  flex-direction: column;
-  font-family:'Inter',sans-serif;
-}
 body{
   background: linear-gradient(-90deg,#02203c,#001528);
   color:#fff;
 }
-.flex{
-  display:flex;
-}
-.flex-col{
-  flex-direction: column;
-}
-.justify-content{
-  justify-content:center;
-
-}
-.align-items{
-  align-items:center;
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+  background:black;
 }
 
-.text-center{
-  text-align: center;
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(0, 0, 0); 
+  border-radius: 5px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background:#7e22ce;
+  border-radius: 5px;
 }
 
-.quote-container{ 
-  max-width: 900px;
-}
-
-.quote-btn{
-  background-color: #02203c;
-  padding:15px 60px;
-  color:#fff;
-  font-size:16px;
-  border-radius: 10px;
-  border: none ;outline: none;
-  cursor: pointer;
-  margin: 50px auto;
-}
-
-.quote-holder{
-  padding:50px 70px;
-  background-color:#122536;
-  border-radius: 20px;
-  margin:50px auto;
-}
-.quote-text {
-  font-family:'Lato',sans-serif;
-  letter-spacing: 1px;
-  margin:20px 0;
-
-  
-}
-.quote-title {
-  font-size: 20px;
-  
-}
-.quote-author{
-  justify-content:flex-end;
-
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background:#52113a; 
 }
